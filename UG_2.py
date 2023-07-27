@@ -9,7 +9,6 @@ def tabung(diameter,tinggi):
     return volume
 
 def balok(panjang,lebar,tinggi):
-    tinggi=int(input("masukan panjang (cm) :"))
     volume=panjang*lebar*tinggi
     return volume
 
@@ -22,14 +21,14 @@ pil=int(input('>>'))
 if pil == 1:
     diameter=int(input("Masukan diameter (cm):"))
     tinggi=int(input("masukan tinggi :"))
-    print(kubus(diameter,tinggi))
+    print(tabung(diameter,tinggi))
 elif pil == 2:
     sisi=int(input('Masukkan sisi(cm) :'))
-    print(tabung(sisi))
+    print(kubus(sisi))
 elif pil == 3:
     panjang=int(input("masukan panjang (cm) :"))
-    lebar=int(input("masukan panjang (cm) :"))
-    tinggi=int(input("masukan panjang (cm) :"))
+    lebar=int(input("masukan lebar (cm) :"))
+    tinggi=int(input("masukan tinggi (cm) :"))
     print(balok(panjang,lebar,tinggi))
 else:
     print('Inputan yang anda masukkan salah !!')
